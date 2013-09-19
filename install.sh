@@ -13,6 +13,11 @@ install-vim() {
 	echo "setting up vim..."
 	$cp_cmd -a ${SRC}/vim ${DEST}/.vim 
 	$cp_cmd -a ${SRC}/vimrc ${DEST}/.vimrc 
+	$cp_cmd -a ${SRC}/gvimrc ${DEST}/.gvimrc 
+	$cp_cmd -a ${SRC}/bundle ${DEST}/.vim/bundle 
+
+  # run vundle to get vim goodness...
+  vim +BundleInstall +qall
 	echo "DONE with install tasks."
 }
   
@@ -20,6 +25,7 @@ install-vim() {
 uninstall-vim() {
 	echo "Uninstalling vim from ${DEST}..."
 	$rm_cmd -f ${DEST}/.vimrc 
+	$rm_cmd -f ${DEST}/.gvimrc 
 	$rm_cmd -f ${DEST}/.viminfo 
 	$rm_cmd -rf ${DEST}/.vim
 }

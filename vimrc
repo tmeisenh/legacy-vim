@@ -3,6 +3,9 @@
 " Deal with unicode characters even if system locale is incorrect
 scriptencoding utf8
 
+" load up bundles
+source $HOME/.vim/bundle.vim
+
 " Turn off any vi compatibility
 set nocompatible
 set shortmess+=I        " Don't show the Vim welcome screen
