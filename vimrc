@@ -1,5 +1,5 @@
 " .vimrc
-" See https://github.com/sandersch/dotfiles
+" See https://github.com/tmeisenh/vim
 " Deal with unicode characters even if system locale is incorrect
 scriptencoding utf8
 
@@ -28,7 +28,7 @@ nmap <silent> <S-Insert> :set paste<CR>"+p:set nopaste<CR>
 "set autoindent          " Copy indent from current line for new line
 "set nosmartindent       " 'smartindent' breaks right-shifting of # lines
 
-set history=10000       " Remember this many commands
+set history=1000        " Remember this many commands
 
 set number              " Display line numbers
 set numberwidth=4       " Minimum number of columns to show for line numbers
