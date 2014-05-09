@@ -113,6 +113,7 @@ if exists("loaded_nerd_tree")
   autocmd AuNERDTreeCmd VimEnter * call s:CdIfDirectory(expand("<amatch>"))
   autocmd AuNERDTreeCmd FocusGained * call s:UpdateNERDTree()
   autocmd AuNERDTreeCmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
+  let NERDTreeIgnore = ['\.o$', '\.lo$', '\.java$']
 endif
 
 " Close all open buffers on entering a window if the only
