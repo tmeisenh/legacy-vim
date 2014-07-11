@@ -35,5 +35,6 @@ Bundle 'jgdavey/vim-blockle'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'vim-indent-object'
 Bundle 'kien/ctrlp.vim'
+Bundle 'jimenezrick/vimerl'
 
 filetype plugin indent on     " required!
