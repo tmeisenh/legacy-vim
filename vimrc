@@ -6,6 +6,9 @@ scriptencoding utf8
 " load up bundles
 source $HOME/.vim/bundle.vim
 
+" plugins expect bash and not our zsh :(
+set shell=bash
+
 " Turn off any vi compatibility
 set nocompatible
 set shortmess+=I        " Don't show the Vim welcome screen
