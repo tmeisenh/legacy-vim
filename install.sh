@@ -18,6 +18,7 @@ install-vim() {
 
   # run vundle to get vim goodness...
   vim +BundleInstall +qall
+  (cd ${DEST}/.vim/bundle/YouCompleteMe; ./install.py --clang-completer)
 	echo "DONE with install tasks."
 }
   
