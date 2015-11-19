@@ -1,12 +1,10 @@
 " .vimrc
 " See https://github.com/tmeisenh/vim
+ 
 " Deal with unicode characters even if system locale is incorrect
 scriptencoding utf8
 
-" load up bundles
-source $HOME/.vim/bundle.vim
-
-" plugins expect bash and not our zsh :(
+" plugins expect bash 
 set shell=bash
 
 " Turn off any vi compatibility
@@ -14,6 +12,9 @@ set nocompatible
 set shortmess+=I        " Don't show the Vim welcome screen
 
 let mapleader=","       " Set this early in case other things use it
+
+" load up bundles
+source $HOME/.vim/bundle.vim
 
 "Enable syntax highlightning and some nice filetype associations
 syntax enable
@@ -89,16 +90,12 @@ set whichwrap+=<,>,[,]
 set updatecount=20
 
 " Source other settings from files
-"
 
 " Load custom file type extensions
 source $HOME/.vim/myfiletypes.vim
 
 " Load platform specific settings
 source $HOME/.vim/platform_setup.vim
-
-" Load abbreviations
-source $HOME/.vim/abbreviations.vim
 
 " Load key mappings
 source $HOME/.vim/key_maps.vim

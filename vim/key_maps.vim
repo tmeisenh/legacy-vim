@@ -9,11 +9,6 @@ inoremap kj <ESC>:noh<CR>
 inoremap jj <ESC>:noh<CR>
 inoremap kk <ESC>:noh<CR>
 
-" F2 inserts the date and time at the cursor.
-"
-inoremap <F2>   <C-R>=strftime("%c")<CR>
-nmap     <F2>   a<F2><Esc>
-
 " Tab/Shift+Tab indent/unindent the highlighted block (and maintain the
 " highlight after changing the indentation). Works for both Visual and Select
 " modes.
@@ -85,11 +80,6 @@ vmap <tab> %
 " Move up and down by screen lines all the time
 nnoremap j gj
 nnoremap k gk
-
-" I hit <F1> more often when trying to hit ESC than when I want :help
-inoremap <F1> <ESC>
-nnoremap <F1> <ESC>
-vnoremap <F1> <ESC>
 
 " Strip all the trailing whitespace in the current file
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
