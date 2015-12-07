@@ -37,6 +37,5 @@ Bundle 'vim-indent-object'
 Bundle 'kien/ctrlp.vim'
 Bundle 'jimenezrick/vimerl'
 Bundle 'fatih/vim-go'
-Bundle 'Valloric/YouCompleteMe'   
 
 filetype plugin indent on     " required!
