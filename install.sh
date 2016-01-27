@@ -14,6 +14,7 @@ install-vim() {
 	$cp_cmd -a ${SRC}/vim ${DEST}/.vim 
 	$cp_cmd -a ${SRC}/vimrc ${DEST}/.vimrc 
 	$cp_cmd -a ${SRC}/gvimrc ${DEST}/.gvimrc 
+	$cp_cmd -a ${SRC}/xvimrc ${DEST}/.xvimrc 
 	$cp_cmd -a ${SRC}/bundle ${DEST}/.vim/bundle 
 
   # run vundle to get vim goodness...
