@@ -9,33 +9,36 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 filetype plugin indent on     " required!
- " My Bundles here:
- "
- " original repos on github
-Bundle 'tpope/vim-fugitive'
+
+Bundle 'tpope/vim-vividchalk'
+Bundle 'w0ng/vim-hybrid'
+
 Bundle 'tpope/vim-bundler'
-Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-markdown'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-unimpaired'
+
+Bundle 'airblade/vim-gitgutter'
 Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'cperl82/bufexplorer'
+Bundle 'taglist.vim'
+Bundle 'jgdavey/vim-blockle'
+Bundle 'kien/ctrlp.vim'
 Bundle 'mileszs/ack.vim'
+Bundle 'Raimondi/delimitMate'
+Bundle 'sjl/gundo.vim'
+Bundle 'tsaleh/vim-align'
+Bundle 'vim-indent-object'
+Bundle 'ZoomWin'
+
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/syntastic'
-Bundle 'taglist.vim'
-"Bundle 'ervandew/supertab'
-Bundle 'timcharper/textile.vim'
-Bundle 'ZoomWin'
-Bundle 'tsaleh/vim-align'
-Bundle 'sjl/gundo.vim'
-Bundle 'cperl82/bufexplorer'
-Bundle 'Raimondi/delimitMate'
-Bundle 'jgdavey/vim-blockle'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'vim-indent-object'
-Bundle 'kien/ctrlp.vim'
+
 Bundle 'jimenezrick/vimerl'
+Bundle 'timcharper/textile.vim'
 Bundle 'fatih/vim-go'
 Bundle 'vim-ruby/vim-ruby'
 
