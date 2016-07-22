@@ -16,6 +16,8 @@ let mapleader=","       " Set this early in case other things use it
 " load up bundles
 source $HOME/.vim/bundle.vim
 
+colorscheme hybrid
+
 "Enable syntax highlightning and some nice filetype associations
 syntax enable
 filetype plugin indent on
