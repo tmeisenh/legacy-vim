@@ -19,6 +19,9 @@ install-vim() {
 
   # run vundle to get vim goodness...
   vim +BundleInstall +qall
+  echo "Installing YouCompleteMe...this will take awhile."
+  (cd ${DEST}/.vim/bundle/tern_for_vim && npm install -g)
+  (cd ${DEST}/.vim/bundle/YouCompleteMe && ./install.py --clang-completer  --tern-completer)
 	echo "DONE with install tasks."
 }
   
