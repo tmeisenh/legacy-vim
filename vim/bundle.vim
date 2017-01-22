@@ -13,34 +13,53 @@ filetype plugin indent on     " required!
 Bundle 'tpope/vim-vividchalk'
 Bundle 'w0ng/vim-hybrid'
 
-Bundle 'tpope/vim-bundler'
-Bundle 'tpope/vim-endwise'
+" git
 Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-markdown'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-unimpaired'
-
 Bundle 'airblade/vim-gitgutter'
+
+" themes
+Bundle 'tpope/vim-unimpaired'
+Bundle 'tpope/vim-markdown'
+
+" pretend ide
 Bundle 'christoomey/vim-tmux-navigator'
-Bundle 'cperl82/bufexplorer'
-Bundle 'ervandew/supertab'
+Bundle 'scrooloose/nerdtree'
 Bundle 'taglist.vim'
-Bundle 'jgdavey/vim-blockle'
-Bundle 'kien/ctrlp.vim'
-Bundle 'mileszs/ack.vim'
+Bundle 'ZoomWin'
+Bundle 'tpope/vim-surround'
 Bundle 'Raimondi/delimitMate'
 Bundle 'sjl/gundo.vim'
 Bundle 'tsaleh/vim-align'
-Bundle 'vim-indent-object'
-Bundle 'ZoomWin'
+Bundle 'kien/ctrlp.vim'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,tags
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+let g:ctrlp_use_caching = 0 " no cache
 
-Bundle 'scrooloose/nerdtree'
+Bundle 'mileszs/ack.vim'
+let g:ackprg = 'ag --vimgrep'
+set grepprg=ag\ --nogroup\ --nocolor
+
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/syntastic'
+Bundle 'cperl82/bufexplorer'
+Bundle 'vim-syntastic/syntastic'
+
+" tab completion
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'ternjs/tern_for_vim'
+
+" language specific
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-bundler'
+Bundle 'tpope/vim-endwise'
+Bundle 'jgdavey/vim-blockle'
 
 Bundle 'jimenezrick/vimerl'
 Bundle 'timcharper/textile.vim'
-Bundle 'fatih/vim-go'
-Bundle 'vim-ruby/vim-ruby'
+Bundle 'elixir-lang/vim-elixir'
+Bundle 'hashivim/vim-terraform'
+
+Bundle 'moll/vim-node'
+Bundle 'pangloss/vim-javascript'
+Bundle 'kchmck/vim-coffee-script'
 
 filetype plugin indent on     " required!
