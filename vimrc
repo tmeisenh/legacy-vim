@@ -104,6 +104,3 @@ source $HOME/.vim/key_maps.vim
 
 " Load commands
 source $HOME/.vim/commands.vim
-
-" Load go specific things
-source $HOME/.vim/go.vim
