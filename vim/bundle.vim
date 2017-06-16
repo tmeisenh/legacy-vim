@@ -44,8 +44,8 @@ Bundle 'cperl82/bufexplorer'
 Bundle 'vim-syntastic/syntastic'
 
 " tab completion
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'ternjs/tern_for_vim'
+"Bundle 'Valloric/YouCompleteMe'
+"Bundle 'ternjs/tern_for_vim'
 
 " language specific
 Bundle 'vim-ruby/vim-ruby'
