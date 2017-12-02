@@ -1,9 +1,5 @@
 vim
 ========
-My vim settings.
+My vim settings - mostly for terminal use to edit various config files.  For real work I use emacs.
 
-git submodule update --init --recursive
 ./install.sh
-
-(Ok, not really mine...I liked the setup two guys at work had.)
-

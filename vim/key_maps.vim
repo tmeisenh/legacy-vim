@@ -61,15 +61,6 @@ vmap <C-Down> ]egv
 vmap <C-k> [egv
 vmap <C-j> ]egv
 
-" Turn On/Off NERDTree
-map <leader>n :NERDTreeToggle<CR>
-
-" CtrlP maps
-map <leader>t :CtrlP<CR>
-map <leader>p :CtrlPMixed<CR>
-map <leader>b :CtrlPBuffer<CR>
-map <leader>m :CtrlPMRU<CR>
-
 " Get rid of the distracting search highlighting easily
 nnoremap <leader><space> :noh<cr>
 
