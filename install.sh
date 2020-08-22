@@ -1,8 +1,4 @@
-#!/bin/bash
-#
-# For FreeBSD systems, you'll need to manually invoke bash to run
-# this script since /bin/bash isn't a valid shell.
-# /usr/local/bin/bash ./install.sh
+#!/usr/bin/env bash
 
 SRC="$(pwd)"
 DEST=$HOME
@@ -13,15 +9,10 @@ install-vim() {
 	echo "setting up vim..."
 	$cp_cmd -a ${SRC}/vim ${DEST}/.vim 
 	$cp_cmd -a ${SRC}/vimrc ${DEST}/.vimrc 
-	$cp_cmd -a ${SRC}/gvimrc ${DEST}/.gvimrc 
-	$cp_cmd -a ${SRC}/xvimrc ${DEST}/.xvimrc 
 	$cp_cmd -a ${SRC}/bundle ${DEST}/.vim/bundle 
 
   # run vundle to get vim goodness...
   vim +BundleInstall +qall
-  #echo "Installing YouCompleteMe...this will take awhile."
-  #(cd ${DEST}/.vim/bundle/tern_for_vim && npm install -g)
-  #(cd ${DEST}/.vim/bundle/YouCompleteMe && ./install.py --clang-completer  --tern-completer)
 	echo "DONE with install tasks."
 }
   
@@ -29,7 +20,6 @@ install-vim() {
 uninstall-vim() {
 	echo "Uninstalling vim from ${DEST}..."
 	$rm_cmd -f ${DEST}/.vimrc 
-	$rm_cmd -f ${DEST}/.gvimrc 
 	$rm_cmd -f ${DEST}/.viminfo 
 	$rm_cmd -rf ${DEST}/.vim
 }

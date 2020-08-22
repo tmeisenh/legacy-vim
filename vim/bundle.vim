@@ -6,7 +6,7 @@ call vundle#rc()
 
  " let Vundle manage Vundle
  " required!
-Bundle 'gmarik/vundle'
+"Bundle 'gmarik/vundle'
 
 filetype plugin indent on     " required!
 
@@ -43,20 +43,13 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'cperl82/bufexplorer'
 Bundle 'vim-syntastic/syntastic'
 
-" tab completion
-"Bundle 'Valloric/YouCompleteMe'
-"Bundle 'ternjs/tern_for_vim'
-
 " language specific
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-endwise'
 Bundle 'jgdavey/vim-blockle'
 
-Bundle 'jimenezrick/vimerl'
 Bundle 'timcharper/textile.vim'
-Bundle 'elixir-lang/vim-elixir'
-Bundle 'hashivim/vim-terraform'
 
 Bundle 'moll/vim-node'
 Bundle 'pangloss/vim-javascript'
